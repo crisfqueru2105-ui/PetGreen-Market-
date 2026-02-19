@@ -1,177 +1,199 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>PetOrganic - Alimentos Orgánicos para Mascotas</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PetGreen</title>
 
-        body{
-            background:#f5f5f5;
-        }
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+}
 
-        header{
-            background:#111;
-            color:white;
-            padding:20px;
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-        }
+header{
+    background:#14532d;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
 
-        header h1{
-            font-size:22px;
-        }
+.banner{
+    background:#16a34a;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
 
-        nav a{
-            color:white;
-            text-decoration:none;
-            margin-left:20px;
-            font-size:14px;
-        }
+.seccion{
+    padding:40px 20px;
+    background:white;
+    margin:20px;
+    border-radius:10px;
+}
 
-        .banner{
-            background:linear-gradient(to right,#2ecc71,#27ae60);
-            color:white;
-            padding:60px 20px;
-            text-align:center;
-        }
+.productos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+    gap:15px;
+    padding:20px;
+}
 
-        .banner h2{
-            font-size:40px;
-            margin-bottom:10px;
-        }
+.card{
+    background:white;
+    border-radius:8px;
+    padding:10px;
+    box-shadow:0 3px 8px rgba(0,0,0,0.1);
+    text-align:center;
+}
 
-        .productos{
-            padding:40px 20px;
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-            gap:20px;
-        }
+.card img{
+    width:100%;
+    height:100px;
+    object-fit:cover;
+    border-radius:6px;
+}
 
-        .card{
-            background:white;
-            border-radius:10px;
-            overflow:hidden;
-            box-shadow:0 5px 15px rgba(0,0,0,0.1);
-            transition:0.3s;
-        }
+.card h4{
+    font-size:14px;
+    margin:8px 0;
+}
 
-        .card:hover{
-            transform:scale(1.05);
-        }
+.card p{
+    font-size:12px;
+    color:#555;
+}
 
-        .card img{
-            width:100%;
-            height:200px;
-            object-fit:cover;
-        }
+.precio{
+    color:#16a34a;
+    font-weight:bold;
+}
 
-        .card-body{
-            padding:15px;
-        }
+button{
+    background:#14532d;
+    color:white;
+    border:none;
+    padding:6px;
+    width:100%;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:12px;
+}
 
-        .card-body h3{
-            font-size:18px;
-            margin-bottom:10px;
-        }
+button:hover{
+    background:#16a34a;
+}
 
-        .precio{
-            color:#27ae60;
-            font-weight:bold;
-            margin-bottom:10px;
-        }
+.carrito{
+    position:fixed;
+    right:15px;
+    top:100px;
+    background:white;
+    width:200px;
+    padding:15px;
+    border-radius:8px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    font-size:13px;
+}
 
-        .btn{
-            display:block;
-            background:#111;
-            color:white;
-            text-align:center;
-            padding:10px;
-            text-decoration:none;
-            border-radius:5px;
-            transition:0.3s;
-        }
-
-        .btn:hover{
-            background:#27ae60;
-        }
-
-        footer{
-            background:#111;
-            color:white;
-            text-align:center;
-            padding:20px;
-            margin-top:40px;
-        }
-
-        @media(max-width:600px){
-            .banner h2{
-                font-size:28px;
-            }
-        }
-    </style>
+footer{
+    background:#14532d;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>PetOrganic</h1>
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Productos</a>
-        <a href="#">Nosotros</a>
-        <a href="#">Contacto</a>
-    </nav>
+<h1>PetGreen</h1>
+<p>Alimentos Orgánicos para Mascotas</p>
 </header>
 
 <section class="banner">
-    <h2>Alimentos Orgánicos Premium</h2>
-    <p>Nutrición 100% natural para perros y gatos en Bogotá</p>
+<h2>Nutrición Natural y Sostenible en Bogotá</h2>
 </section>
 
 <section class="productos">
 
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee" alt="Comida orgánica perro">
-        <div class="card-body">
-            <h3>Dog Natural Mix</h3>
-            <p class="precio">$45.000</p>
-            <a href="#" class="btn">Comprar</a>
-        </div>
-    </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1">
+<h4>Concentrado Orgánico</h4>
+<p>Pollo natural y vegetales ecológicos.</p>
+<div class="precio">$48.000</div>
+<button onclick="agregar('Concentrado Orgánico',48000)">Agregar</button>
+</div>
 
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1598135753163-6167c1a1ad65" alt="Comida orgánica gato">
-        <div class="card-body">
-            <h3>Cat Organic Premium</h3>
-            <p class="precio">$39.000</p>
-            <a href="#" class="btn">Comprar</a>
-        </div>
-    </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1583512603805-3cc6b41f3edb">
+<h4>Alimento Deshidratado</h4>
+<p>Carne natural sin conservantes.</p>
+<div class="precio">$42.000</div>
+<button onclick="agregar('Alimento Deshidratado',42000)">Agregar</button>
+</div>
 
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1601758125946-6ec2ef64daf8" alt="Snacks naturales">
-        <div class="card-body">
-            <h3>Snacks Naturales</h3>
-            <p class="precio">$25.000</p>
-            <a href="#" class="btn">Comprar</a>
-        </div>
-    </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1568640347023-a616a30bc3bd">
+<h4>Snacks Ecológicos</h4>
+<p>Premios saludables para perros y gatos.</p>
+<div class="precio">$26.000</div>
+<button onclick="agregar('Snacks Ecológicos',26000)">Agregar</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c">
+<h4>Línea Premium Bio</h4>
+<p>Receta gourmet con empaque biodegradable.</p>
+<div class="precio">$65.000</div>
+<button onclick="agregar('Línea Premium Bio',65000)">Agregar</button>
+</div>
 
 </section>
 
+<section class="seccion">
+<h2>Misión</h2>
+<p>Somos una empresa dedicada a la comercialización de alimentos saludables y ecológicos para mascotas, ofreciendo productos naturales de alta calidad que contribuyen al bienestar animal y al cuidado del medio ambiente.</p>
+
+<h2>Visión</h2>
+<p>Para el año 2030, ser reconocidos en Bogotá como líderes en la comercialización de alimentos sostenibles para mascotas, destacándonos por nuestra innovación y compromiso ambiental.</p>
+
+<h2>Objetivos</h2>
+<ul>
+<li>Implementar empaques biodegradables en la mayoría de nuestros productos.</li>
+<li>Trabajar con proveedores responsables y sostenibles.</li>
+<li>Desarrollar productos innovadores basados en economía circular.</li>
+<li>Promover el consumo responsable en Bogotá y Colombia.</li>
+</ul>
+</section>
+
+<div class="carrito">
+<h3>🛒 Carrito</h3>
+<ul id="lista"></ul>
+<p><strong>Total: $<span id="total">0</span></strong></p>
+</div>
+
 <footer>
-    <p>© 2026 PetOrganic - Bogotá, Colombia</p>
+© 2026 PetGreen - Bogotá, Colombia
 </footer>
+
+<script>
+let total = 0;
+
+function agregar(nombre, precio){
+    let lista = document.getElementById("lista");
+    let item = document.createElement("li");
+    item.textContent = nombre + " - $" + precio;
+    lista.appendChild(item);
+    total += precio;
+    document.getElementById("total").textContent = total;
+}
+</script>
 
 </body>
 </html>
+
 
